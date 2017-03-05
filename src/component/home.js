@@ -11,9 +11,11 @@ class Home extends React.Component{
     return(
       <div className="home">
         <div className="home-cover">
-          <h1>Welcome Luckyhanye's blog</h1>
-          <p>FrontEnd Web Developer</p>
-          <a href="https://github.com/luckyhanye">Luckyhanye</a>
+          <div>
+            <h1>Luckyhanye's blog</h1>
+            <p>FrontEnd Web Developer</p>
+            <a href="https://github.com/luckyhanye">Luckyhanye</a>
+          </div>
         </div>
       </div>
     )
