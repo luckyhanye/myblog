@@ -12,6 +12,55 @@ html,body,#root{
   flex-direction:column;
   height:100%;
 }
+@media(min-width:750px){
+  .root{
+    flex-direction:row;
+  }
+}
+.leftnav{
+  background-color: #057271;
+  width: 20%;
+  flex-shrink:0;
+}
+.leftnav .navtop{
+  border-bottom:2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom:20px;
+}
+.leftnav h3{
+  font-size: 23px;
+  text-align:center;
+  color:white;
+  line-height: 1em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.leftnav button{
+  background-color: #ccc;
+  border:none;
+  padding:0 5px;
+  color:rgba(200,0,0,0.6);
+  margin-left: 10px;
+  line-height: 1.5em;
+  margin-left: 30%;
+  margin-top: 5px;
+  border-radius:3px;
+}
+.leftnav a{
+  display:block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2.3em;
+  padding-left:20%;
+  margin-bottom: 10px;
+}
+.leftnav a:hover{
+  background-color: rgba(20,30,50,0.6);
+  color:white
+}
+.leftnav i{
+  margin-right: 10px;
+}
 header{
   display:flex;
   height:70px;
@@ -150,4 +199,19 @@ footer div{
   position:absolute;
   right:20px;
   bottom:0;
+}
+
+
+.article{
+  overflow-x:auto;
+  width: 100%;
+  line-height: 1.5em;
+}
+.article h3{
+  text-align:center;
+  color:teal;
+}
+.article ul{
+  color:red;
+  margin-left: 20px;
 }

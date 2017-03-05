@@ -25,11 +25,13 @@ class Post extends React.Component{
   }
   render(){
     console.log("post======",this.props);
+    let styles={
+
+    }
     return(
-      <div>
-        文章内容
+      <div style={{width:"100%"}}>
         {this.state.data.length==0?'加载中……':
-        <div dangerouslySetInnerHTML={{__html:marked(this.state.data)}}></div>
+        <div dangerouslySetInnerHTML={{__html:marked(this.state.data)}} className="article"></div>
         }
       </div>
     )
